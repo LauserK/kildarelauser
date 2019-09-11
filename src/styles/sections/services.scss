@@ -1,0 +1,73 @@
+.services {
+  background-color: $dark;
+  color: $white;
+  padding: 3rem 2rem;
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+
+    &--big {
+      text-transform: uppercase;
+      color: $light;
+      font-family: "Roboto Condensed", Arial, sans-serif;
+      letter-spacing: 2px;
+      text-align: center;
+      font-size: 2.1rem;
+      margin-bottom: 3rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 2rem auto;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+      max-width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    i {
+      font-size: 3rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      vertical-align: middle;
+      padding: 30px;
+      border: 2px solid $white;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}

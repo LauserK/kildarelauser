@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  background-color: $dark2;
+  color: $white;
+
+  a {
+    margin-right: 1rem;
+    color: $light;
+    transition: 0.5s ease;
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    div {
+      margin-bottom: 1rem;
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

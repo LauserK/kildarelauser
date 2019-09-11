@@ -1,0 +1,120 @@
+.header {
+  background: linear-gradient(to right, $dark2, lighten($dark2, 8%));
+  color: $white;
+  padding: 1rem 5rem;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    min-height: 60vh;
+    padding: 1rem 3rem;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem 5rem;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+      padding: 1rem 3rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    color: $title-color;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.8rem;
+  }
+
+  &__nav {
+    &__option {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      margin-right: 1rem;
+      color: $a-color;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+      transition: 0.4s ease-in-out;
+
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+
+      &:hover {
+        border-bottom: 2px solid $title-color;
+      }
+
+      a {
+        color: $a-color;
+      }
+    }
+  }
+
+  &__big {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__tiny {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #6b778d;
+  }
+  &__grand {
+    font-size: 3.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .button {
+      margin-right: 1rem;
+
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__socials {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #6b778d;
+      transition: 0.5s ease;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

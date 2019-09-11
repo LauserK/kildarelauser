@@ -1,0 +1,51 @@
+.contactme {
+  padding: 1rem;
+  background-color: $dark;
+
+  &__title {
+    text-transform: uppercase;
+    color: $light;
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-flow: wrap;
+    max-width: 80%;
+  }
+
+  &__item {
+    width: 50%;
+    margin: 1rem 0;
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      color: $principal;
+      transition: 0.2s ease-in-out;
+    }
+    i {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      a {
+        transform: scale(1.2);
+      }
+    }
+
+    &--full {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
