@@ -13,6 +13,14 @@
     padding: 1rem 3rem;
   }
 
+  @media screen and (max-width: 450px) {
+    min-height: 75vh;
+  }
+
+  @media screen and (max-height: 700px) {
+    min-height: 95vh;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -24,6 +32,7 @@
     right: 0;
     padding: 1rem 5rem;
     box-sizing: border-box;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
       padding: 1rem 3rem;
@@ -41,6 +50,10 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 1.8rem;
+
+    @media screen and (max-width: 400px) {
+      font-size: 1.2rem;
+    }
   }
 
   &__nav {
@@ -66,12 +79,32 @@
       a {
         color: $a-color;
       }
+
+      @media screen and (max-width: 450px) {
+        display: block;
+        margin-right: 0px;
+        border: 1px solid $white;
+        text-align: center;
+        padding: 0.4rem;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      ul {
+        padding-left: 0px;
+      }
     }
   }
 
   &__big {
     max-width: 800px;
     margin: 0 auto;
+
+    @media screen and (max-width: 376px) {
+      max-width: 100%;
+      margin-top: 6rem;
+    }
   }
 
   &__tiny {
@@ -85,6 +118,10 @@
 
     @media screen and (max-width: 768px) {
       font-size: 3rem;
+    }
+
+    @media screen and (max-width: 376px) {
+      font-size: 2rem;
     }
   }
   &__buttons {
